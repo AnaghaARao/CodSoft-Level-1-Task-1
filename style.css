@@ -1,0 +1,308 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.header{
+    top:0;
+    position: fixed;
+    background-color: #000;
+    text-align: center;
+    color: #6ab29b;
+    padding: 20px;
+    width: 100%;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 32pt;
+}
+
+#logo{
+    height:100px;
+    width:100px;
+    padding-left: 5px;
+    top:7px;
+    left:10px;
+    position: fixed;
+    border-radius: 50%;
+    border: 3px solid #6ab29b;
+}
+
+/* horizontal ka zone */
+.nav-bar-horizontal ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 118px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #6ab29b;
+    list-style-type: none;
+    overflow: hidden;    
+}
+
+.nav-bar-horizontal li{
+    display: inline;
+    float: left; 
+    width: 80pt;
+    /*float: left; - Use float to get block elements to float next to each other*/
+}
+
+.nav-bar-horizontal li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    padding: 8px;
+    /* how to remove underline from links?*/
+}
+
+.nav-bar-horizontal li a:hover{
+    background-color: yellowgreen;
+    /*background-color: rgb(24, 96, 73);*/
+    color:white;
+}
+
+.nav-bar-horizontal li{
+    text-align: center;
+    border-right: 1px solid #f2f2f2;
+}
+
+.nav-bar-horizontal li:last-child{
+    border-right: none;
+}
+
+.active{
+    background-color: hsl(161 , 68 , 29); 
+    color: yellow;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+
+.column p{
+    padding: 10px;
+    color: #b9b9b9;
+    font-size: 18pt;
+}
+
+.highlight{
+    color: yellowgreen;
+    font-size: 40pt;
+}
+
+#home{
+    padding: 150px 0;
+}
+
+#home img{
+    padding-top: 70px;
+    height:350px;
+    padding-left:100px;
+}
+
+#home .column p{
+    padding-top: 90px;
+    width: 84%; 
+}
+
+#about{
+    padding-top: 250px;
+}
+
+
+#about img{
+    height:78%;
+}
+
+#about .column p{
+    padding-top: 90px;
+    width: 84%;
+    left: 0;
+}
+
+#services{
+    padding-top: 250px;
+}
+
+#services .highlight{
+    display: block;
+}
+
+#services .row{
+    padding-top: 100px;
+}
+
+#services .row p{
+    padding-top: 90px;
+    width: 90%;
+    text-align: justify;
+    padding-left: 40px;
+    color: #b9b9b9;
+    font-size: 18pt;
+}
+
+#services .gallery{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    overflow-x: hidden;
+}
+
+#services .gallery .box{
+    width: 50%;
+    padding: 10px;
+    margin: 8px;
+}
+
+#services .gallery .image{
+    flex-basis: 20%;
+    width: 350px;
+    height: 350px;
+}
+
+#services .gallery .text{
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    font-size: 18pt;
+    text-align: center;
+}
+
+#portfolio{
+    padding-top: 0;
+}
+
+#portfolio .content{
+    padding-top: 50px;
+}
+
+#portfolio .content p{
+    padding-top: 90px;
+    width: 90%;
+    text-align:justify;
+    padding-left: 40px;
+    color: #b9b9b9;
+    font-size: 18pt;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.vertical{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.vertical img{
+    margin-top: 2px;
+    vertical-align: middle;
+    width: 100%;
+    border: 4px solid rgb(54, 128, 54);
+}
+
+.portfolio-container{
+    padding-bottom: 50px;
+}
+
+.footer{
+    padding-top: 30px;
+    border-top: 4px double yellowgreen;
+}
+
+.footer h2{
+    color: #6ab29b;
+    text-align: center;
+    font-size: 32pt;
+}
+
+.footer ul{ 
+    width: 90%;
+    display: inline-flex;
+    text-decoration-style: none;
+    justify-content: space-evenly;
+}
+
+.footer .contact{
+    text-decoration-style: none ;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+}
+
+.contact li{
+    margin-top: 10px;
+    font-size: 18pt;
+}
+
+.footer li{
+    padding-left: 100px;
+    text-decoration-style: none ;
+    text-decoration: none;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.8;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border: 4px solid #16639f;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border: 4px solid #6d84b6;
+  }
+
+  .fa-instagram {
+    background: #b00cb8;
+    color: white;
+    border: 4px solid #b414a6;
+  }
+  
+  /* Twitter */
+  .fa-youtube {
+    background: #ff0c0c;
+    color: white;
+    border: 4px solid #fba84a;
+  }
